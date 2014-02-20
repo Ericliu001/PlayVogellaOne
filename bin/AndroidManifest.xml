@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.playvogella"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.playvogella.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.playvogella.intent.FirstActivity"
+            android:label="@string/title_activity_intent" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.intent.SecondActivity"
+            android:label="@string/title_activity_second" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.fragment.RssfeedActivity"
+            android:label="@string/title_activity_rssfeed" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.actionbar.ActionOneActivity"
+            android:label="@string/title_activity_action_one" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.actionbar.ActionTwoActivity"
+            android:label="@string/title_activity_action_two" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.list.PlayListActivity"
+            android:label="@string/title_activity_play_list" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.list.MultiSelectListActivity"
+            android:label="@string/title_activity_multi_select_list" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.MyListActivityActionbar"
+            android:label="@string/title_activity_my_list_activity_actionbar"
+            android:parentActivityName="android.app.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.playvogella.list.MyListActionbarActivity"
+            android:label="@string/title_activity_my_list_actionbar" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.list.UndoActivity"
+            android:label="@string/title_activity_undo" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.list.MyListActivity"
+            android:label="@string/title_activity_my_list"
+            android:parentActivityName="android.app.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.playvogella.list.MyTwoListItemsActivity"
+            android:label="@string/title_activity_my_two_list_items" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.list.InteractListActivity"
+            android:label="@string/title_activity_interact_list" >
+        </activity>
+        <activity
+            android:name="com.example.playvogella.expandable.ExpandableActivity"
+            android:label="@string/title_activity_expandable" >
+        </activity>
+    </application>
+
+</manifest>
